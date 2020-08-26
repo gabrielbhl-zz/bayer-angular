@@ -1,0 +1,58 @@
+[
+    {
+        "id": "1",
+        "document": {
+            "documentNumber": "418.839.258-43",
+            "documentType": "CPF"
+        },
+        "name": "Gabriel Bonuccelli Heringer Lisboa",
+        "address": {
+            "street": "Rua Papa Leao XIII, 14",
+            "address": "casa 08",
+            "state": "SP",
+            "country": "Brasil"
+        }
+    },
+    {
+        "id": "2",
+        "document": {
+            "documentNumber": "475.122.829-11",
+            "documentType": "CPF"
+        },
+        "name": "Joao Silva",
+        "address": {
+            "street": "Rua Berrini, 505",
+            "address": "2205040",
+            "state": "SP",
+            "country": "Brasil"
+        }
+    },
+    {
+        "id": "3",
+        "document": {
+            "documentNumber": "12.345.678/0001-90",
+            "documentType": "CNPJ"
+        },
+        "name": "Bayer",
+        "address": {
+            "street": "Rua B",
+            "address": "001",
+            "state": "Bavaria",
+            "country": "Alemanha"
+        }
+    },
+    {
+        "id": "4",
+        "document": {
+            "documentNumber": "12.345.678-90",
+            "documentType": "RG"
+        },
+        "name": "Adulto Ney",
+        "address": {
+            "street": "Rua dos Bobos",
+            "address": "0",
+            "state": "RJ",
+            "country": "Brasil"
+        }
+    }
+]

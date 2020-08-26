@@ -1,0 +1,43 @@
+<mat-card>
+
+    <div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="left" fxLayoutGap="10px" fxLayoutGap.xs="0">
+        <div fxFlex="30%">
+            <mat-form-field appearance="fill" class="full-width">
+                <mat-label>Nome ou Doc#</mat-label>
+                <input type="text" placeholder="" aria-label="Number" (input)="searchFarmers($event.target.value)"
+                    matInput [matAutocomplete]="auto" [value]="farmerSelected.name" />
+                <mat-autocomplete #auto="matAutocomplete" (optionSelected)="setSelectedFarmer($event.option.value)">
+                    <mat-option *ngFor="let farmer of farmers" [value]="farmer">
+                        <b *ngIf="farmer?.document?.documentNumber">{{farmer.document.documentNumber}}:</b> {{farmer.name}}
+                    </mat-option>
+                </mat-autocomplete>
+                <mat-icon matPrefix>search</mat-icon>
+                <mat-icon matSuffix>arrow_forward</mat-icon>
+            </mat-form-field>
+        </div>
+
+        <div fxFlex="70%">
+            <mat-form-field class="full-width">
+                <mat-label>Destinatário</mat-label>
+                <input matInput disabled [value]="farmerSelected.name" />
+            </mat-form-field>
+        </div>
+
+    </div>
+
+    <div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="left" fxLayoutGap="10px" fxLayoutGap.xs="0">
+        <div fxFlex>
+            <mat-form-field class="full-width">
+                <mat-label>Doc #</mat-label>
+                <input matInput disabled [value]="farmerSelected.document.documentNumber">
+            </mat-form-field>
+        </div>
+
+        <div fxFlex="80%">
+            <mat-form-field class="full-width">
+                <mat-label>Endereço</mat-label>
+                <input matInput disabled [value]="getFarmetAddress()">
+            </mat-form-field>
+        </div>
+    </div>
+</mat-card>
