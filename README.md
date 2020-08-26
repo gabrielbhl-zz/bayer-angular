@@ -12,6 +12,11 @@ Datasets foram hardcoded para fins ilustrativos
 é a aplicação em angular
 
 
+**Certifique-se de que tem instalado**
+- [NodeJs](https://nodejs.org/en/)
+- Angular CLI `npm install -g @angular/cli`
+___
+
 >clone este repositório
 
 >em duas linhas de comando diferentes, digite `cd backend` em uma e `cd frontend` na outra
