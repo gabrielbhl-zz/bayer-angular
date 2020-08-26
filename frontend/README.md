@@ -1,8 +1,3 @@
-**Certifique-se de que tem instalado**
-- [NodeJs](https://nodejs.org/en/)
-- Angular CLI `npm install -g @angular/cli`
-___
-
 **Clone o repositório. No local onde unzipou/clonou este repositório, abra sua linha de comando e digite `cd frontend`**
 - `npm install`
 
